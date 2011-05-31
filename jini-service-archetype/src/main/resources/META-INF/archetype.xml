@@ -1,0 +1,15 @@
+<archetype>
+  <id>jini-service-archetype</id>
+  <sources>
+    <source>src/main/java/IJiniService.java</source>
+    <source>src/main/java/JiniServiceImpl.java</source>
+    <source>src/main/java/IRemoteJiniService.java</source>
+    <source>src/main/java/JiniServiceProxy.java</source>
+    <source>src/main/java/JiniServiceServer.java</source>
+  </sources>
+  <resources>
+    <resource>src/main/resources/jeri/service-jeri.config</resource>
+    <resource>src/main/resources/jrmp/service-jrmp.config</resource>
+    <resource>src/main/resources/service.policy</resource>
+  </resources>
+</archetype>

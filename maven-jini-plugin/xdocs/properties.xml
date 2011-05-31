@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<document>
+  <properties>
+    <title>Jini Plugin Properties</title>
+  </properties>
+  <body>
+    <section name="Jini Plugin Settings">
+      <table>
+        <tr>
+          <th>Property</th>
+          <th>Optional?</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>maven.jini.service.serverhost</td>
+          <td>Yes</td>
+          <td>
+            <p>Default value is
+              <code>localhost</code>.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>maven.jini.service.loggingconfig</td>
+          <td>Yes</td>
+          <td>
+            <p>Default value is
+              <code>${plugin.resources}${file.separator}${jini.starterkit.dir.name}${file.separator}example${file.separator}common${file.separator}logging${file.separator}jini.logging</code>.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>maven.jini.service.securitymanager</td>
+          <td>Yes</td>
+          <td>
+            <p>Default value is
+              <code>
+              </code>.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>maven.jini.service.servicename</td>
+          <td>Yes</td>
+          <td>
+            <p>Default value is
+              <code>reggie</code>.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>maven.jini.service.verbose</td>
+          <td>Yes</td>
+          <td>
+            <p>Default value is
+              <code>false</code>.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>maven.jini.service.loggingmanager</td>
+          <td>Yes</td>
+          <td>
+            <p>Default value is
+              <code>com.sun.jini.logging.LogManager</code>.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>maven.jini.service.implname</td>
+          <td>Yes</td>
+          <td>
+            <p>Default value is
+              <code>TransientRegistrarImpl</code>.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>maven.jini.service.codebaseport</td>
+          <td>Yes</td>
+          <td>
+            <p>Default value is
+              <code>5464</code>.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>maven.jini.service.codebasehost</td>
+          <td>Yes</td>
+          <td>
+            <p>Default value is
+              <code>localhost</code>.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>maven.jini.service.interfacename</td>
+          <td>Yes</td>
+          <td>
+            <p>Default value is
+              <code>Registrar</code>.</p>
+          </td>
+        </tr>
+      </table>
+    </section>
+  </body>
+</document>

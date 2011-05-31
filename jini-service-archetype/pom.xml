@@ -1,0 +1,68 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.jini.maven-jini-plugin</groupId>
+  <artifactId>jini-service-archetype</artifactId>
+  <version>2.0</version>
+  <packaging>maven-plugin</packaging>
+  <name>Jini Service Archetype</name>
+  <url>http://maven-jini-plugin.jini.org/</url>
+  <description>
+    Archetype for Jini service project creation
+  </description>
+  <issueManagement>
+    <system>Issue Tracker</system>
+    <url>http://maven-jini-plugin.jini.org/servlets/ProjectIssues</url>
+  </issueManagement>
+  <inceptionYear>2005</inceptionYear>
+  <mailingLists>
+    <mailingList>
+      <name>Maven Jini Plug-in Issues</name>
+      <subscribe>http://maven-jini-plugin.jini.org/servlets/ProjectMailingListList</subscribe>
+      <unsubscribe>http://maven-jini-plugin.jini.org/servlets/ProjectMailingListList</unsubscribe>
+      <post>issues@maven-jini-plugin.jini.org</post>
+      <archive>http://maven-jini-plugin.jini.org/servlets/SummarizeList?listName=issues</archive>
+    </mailingList>
+    <mailingList>
+      <name>Maven Jini Plug-in Discuss</name>
+      <subscribe>http://maven-jini-plugin.jini.org/servlets/ProjectMailingListList</subscribe>
+      <unsubscribe>http://maven-jini-plugin.jini.org/servlets/ProjectMailingListList</unsubscribe>
+      <post>discuss@maven-jini-plugin.jini.org</post>
+      <archive>http://maven-jini-plugin.jini.org/servlets/SummarizeList?listName=discuss</archive>
+    </mailingList>
+    <mailingList>
+      <name>Maven Jini Plug-in Announcements</name>
+      <subscribe>http://maven-jini-plugin.jini.org/servlets/ProjectMailingListList</subscribe>
+      <unsubscribe>http://maven-jini-plugin.jini.org/servlets/ProjectMailingListList</unsubscribe>
+      <post>announce@maven-jini-plugin.jini.org</post>
+      <archive>http://maven-jini-plugin.jini.org/servlets/SummarizeList?listName=announce</archive>
+    </mailingList>
+    <mailingList>
+      <name>Maven Jini Plug-in CVS</name>
+      <subscribe>http://maven-jini-plugin.jini.org/servlets/ProjectMailingListList</subscribe>
+      <unsubscribe>http://maven-jini-plugin.jini.org/servlets/ProjectMailingListList</unsubscribe>
+      <post>cvs@maven-jini-plugin.jini.org</post>
+      <archive>http://maven-jini-plugin.jini.org/servlets/SummarizeList?listName=cvs</archive>
+    </mailingList>
+  </mailingLists>
+  <developers>
+    <developer>
+      <id>csterwa</id>
+      <name>Chris Sterling</name>
+      <email>csterwa@jini.org</email>
+      <url>http://user-csterwa.jini.org/</url>
+      <timezone>8</timezone>
+    </developer>
+  </developers>
+  <licenses>
+    <license>
+      <name>Apache License version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <scm>
+    <connection>cvs::pserver:${user}@cvs.jini.org:/cvs/maven-jini-plugin/jini-service-archetype</connection>
+    <developerConnection>cvs::pserver:${user}@cvs.jini.org:/cvs/maven-jini-plugin/jini-service-archetype</developerConnection>
+    <url>http://maven-jini-plugin.jini.org/source/browse/maven-jini-plugin/jini-service-archetype/</url>
+  </scm>
+</project>

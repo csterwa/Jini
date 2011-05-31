@@ -1,0 +1,243 @@
+<project> 
+  <modelVersion>4.0.0</modelVersion>
+  
+  <!-- for now, this is the only groupId acceptable for maven plugins -->
+  <groupId>org.jini.maven-jini-plugin</groupId>
+  
+  <!-- uses a standard naming convention -->
+  <artifactId>maven-jini-plugin</artifactId> 
+  
+  <!-- uses this version, to make it usable without configuring this plugin from
+   |   the project POM.
+   -->
+  <version>2.0</version>
+  
+  <!-- Designate this project as building a maven plugin -->
+  <packaging>maven-plugin</packaging>
+
+  <name>Maven Jini Plugin</name>
+  <url>http://maven-jini-plugin.jini.org/</url>
+  <description>
+    This is a Maven plug-in for Jini service based projects. It's initial capabilities are:
+        * Archetype for Jini service project creation
+        * Starting/Stopping of Jini starter kit services: Reggie, Mahalo, Phoenix, Fiddler, Norm, Mercury, Outrigger, Browser, and HTTP daemon
+        * Configurable RMI runtime: JRMP, JERI, or JERI/JSSE
+        * Configurable activation and persistence modes: transient, activatable, nonactivatable
+  </description>
+  <issueManagement>
+    <system>Issue Tracker</system>
+    <url>http://maven-jini-plugin.jini.org/servlets/ProjectIssues</url>
+  </issueManagement>
+  <inceptionYear>2005</inceptionYear>
+  <mailingLists>
+    <mailingList>
+      <name>Maven Jini Plug-in Issues</name>
+      <subscribe>http://maven-jini-plugin.jini.org/servlets/ProjectMailingListList</subscribe>
+      <unsubscribe>http://maven-jini-plugin.jini.org/servlets/ProjectMailingListList</unsubscribe>
+      <post>issues@maven-jini-plugin.jini.org</post>
+      <archive>http://maven-jini-plugin.jini.org/servlets/SummarizeList?listName=issues</archive>
+    </mailingList>
+    <mailingList>
+      <name>Maven Jini Plug-in Discuss</name>
+      <subscribe>http://maven-jini-plugin.jini.org/servlets/ProjectMailingListList</subscribe>
+      <unsubscribe>http://maven-jini-plugin.jini.org/servlets/ProjectMailingListList</unsubscribe>
+      <post>discuss@maven-jini-plugin.jini.org</post>
+      <archive>http://maven-jini-plugin.jini.org/servlets/SummarizeList?listName=discuss</archive>
+    </mailingList>
+    <mailingList>
+      <name>Maven Jini Plug-in Announcements</name>
+      <subscribe>http://maven-jini-plugin.jini.org/servlets/ProjectMailingListList</subscribe>
+      <unsubscribe>http://maven-jini-plugin.jini.org/servlets/ProjectMailingListList</unsubscribe>
+      <post>announce@maven-jini-plugin.jini.org</post>
+      <archive>http://maven-jini-plugin.jini.org/servlets/SummarizeList?listName=announce</archive>
+    </mailingList>
+    <mailingList>
+      <name>Maven Jini Plug-in CVS</name>
+      <subscribe>http://maven-jini-plugin.jini.org/servlets/ProjectMailingListList</subscribe>
+      <unsubscribe>http://maven-jini-plugin.jini.org/servlets/ProjectMailingListList</unsubscribe>
+      <post>cvs@maven-jini-plugin.jini.org</post>
+      <archive>http://maven-jini-plugin.jini.org/servlets/SummarizeList?listName=cvs</archive>
+    </mailingList>
+  </mailingLists>
+  <developers>
+    <developer>
+      <id>csterwa</id>
+      <name>Chris Sterling</name>
+      <email>csterwa@jini.org</email>
+      <url>http://user-csterwa.jini.org/</url>
+      <timezone>8</timezone>
+    </developer>
+  </developers>
+  <licenses>
+    <license>
+      <name>Apache License version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <scm>
+    <connection>cvs::pserver:anonymous@cvs.jini.org:/cvs/maven-jini-plugin/maven-jini-plugin</connection>
+    <developerConnection>cvs::pserver:${user}@cvs.jini.org:/cvs/maven-jini-plugin/maven-jini-plugin</developerConnection>
+    <url>http://maven-jini-plugin.jini.org/source/browse/maven-jini-plugin/maven-jini-plugin/</url>
+  </scm>
+
+  <!-- 
+    You might want to include additional information here
+    eg the developers, organisation, and dependencies
+  -->
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <!-- TODO need to fix this when Plexo library gets more solid -->
+                    <excludes>
+                        <exclude>**/HttpdLauncherTest.java</exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+  <dependencies>
+    <!-- Maven plug-in API -->
+    <dependency>
+      <groupId>org.apache.maven</groupId>
+      <artifactId>maven-plugin-api</artifactId>
+      <version>2.0</version>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.maven</groupId>
+        <artifactId>maven-embedder</artifactId>
+        <version>2.0</version>
+    </dependency>
+    <dependency>
+        <groupId>org.codehaus.plexus</groupId>
+        <artifactId>plexus-utils</artifactId>
+        <version>1.0.5</version>
+    </dependency>
+    <dependency>
+        <groupId>ant</groupId>
+        <artifactId>ant</artifactId>
+        <version>1.6.5</version>
+    </dependency>
+    <!-- Jini Service Dependencies -->
+    <dependency>
+        <groupId>net.jini</groupId>
+        <artifactId>jini-core</artifactId>
+        <version>2.1</version>
+        <type>jar</type>
+    </dependency>
+    <dependency>
+        <groupId>net.jini</groupId>
+        <artifactId>jini-ext</artifactId>
+        <version>2.1</version>
+        <type>jar</type>
+    </dependency>
+    <dependency>
+        <groupId>net.jini</groupId>
+        <artifactId>jsk-lib</artifactId>
+        <version>2.1</version>
+        <type>jar</type>
+    </dependency>
+    <dependency>
+        <groupId>net.jini</groupId>
+        <artifactId>jsk-platform</artifactId>
+        <version>2.1</version>
+        <type>jar</type>
+    </dependency>
+    <dependency>
+        <groupId>net.jini</groupId>
+        <artifactId>jsk-resources</artifactId>
+        <version>2.1</version>
+        <type>jar</type>
+    </dependency>
+    <dependency>
+        <groupId>com.sun.jini</groupId>
+        <artifactId>destroy</artifactId>
+        <version>2.1</version>
+        <type>jar</type>
+    </dependency>
+    <dependency>
+        <groupId>com.sun.jini</groupId>
+        <artifactId>group</artifactId>
+        <version>2.1</version>
+        <type>jar</type>
+    </dependency>
+    <dependency>
+        <groupId>com.sun.jini</groupId>
+        <artifactId>sun-util</artifactId>
+        <version>2.1</version>
+        <type>jar</type>
+    </dependency>
+    <dependency>
+        <groupId>com.sun.jini</groupId>
+        <artifactId>tools</artifactId>
+        <version>2.1</version>
+        <type>jar</type>
+    </dependency>
+    <dependency>
+        <groupId>com.sun.jini</groupId>
+        <artifactId>checkconfigurationfile</artifactId>
+        <version>2.1</version>
+        <type>jar</type>
+    </dependency>
+    <dependency>
+        <groupId>com.sun.jini</groupId>
+        <artifactId>checkser</artifactId>
+        <version>2.1</version>
+        <type>jar</type>
+    </dependency>
+    <dependency>
+        <groupId>com.sun.jini</groupId>
+        <artifactId>classdep</artifactId>
+        <version>2.1</version>
+        <type>jar</type>
+    </dependency>
+    <dependency>
+        <groupId>com.sun.jini</groupId>
+        <artifactId>classserver</artifactId>
+        <version>2.1</version>
+        <type>jar</type>
+    </dependency>
+    <dependency>
+        <groupId>com.sun.jini</groupId>
+        <artifactId>computedigest</artifactId>
+        <version>2.1</version>
+        <type>jar</type>
+    </dependency>
+    <dependency>
+        <groupId>com.sun.jini</groupId>
+        <artifactId>computehttpmdcodebase</artifactId>
+        <version>2.1</version>
+        <type>jar</type>
+    </dependency>
+    <dependency>
+        <groupId>com.sun.jini</groupId>
+        <artifactId>envcheck</artifactId>
+        <version>2.1</version>
+        <type>jar</type>
+    </dependency>
+    <dependency>
+        <groupId>com.sun.jini</groupId>
+        <artifactId>jarwrapper</artifactId>
+        <version>2.1</version>
+        <type>jar</type>
+    </dependency>
+    <!-- End Jini Service Dependencies -->
+    <!-- Jini starter kit -->
+    <dependency>
+        <groupId>com.sun.jini</groupId>
+        <artifactId>jini-starterkit</artifactId>
+        <version>2.1</version>
+        <type>zip</type>
+    </dependency>
+    <!-- Jini starter kit service configuration files -->
+    <dependency>
+        <groupId>com.sun.jini</groupId>
+        <artifactId>jini-start-examples</artifactId>
+        <version>2.1</version>
+        <type>zip</type>
+    </dependency>
+  </dependencies>
+</project>

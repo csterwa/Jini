@@ -1,0 +1,21 @@
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.jini.maven.plugin.test</groupId>
+    <artifactId>maven-jini-plugin-test-project-1</artifactId>
+    <version>99.0</version>
+    <name>Jini Plugin Test Project 1</name>
+    <build>
+    	<plugins>
+          <plugin>
+            <groupId>org.jini.maven-jini-plugin</groupId>
+            <artifactId>maven-jini-plugin</artifactId>
+            <configuration>
+            	<!--jiniHome>C:\Java\Jini\jini2_1</jiniHome-->
+            	<securityPolicy>C:\Java\Jini\jini2_1\policy.all</securityPolicy>
+            	<securityDebug>true</securityDebug>
+            	<serviceDebug>false</serviceDebug>
+            </configuration>
+          </plugin>
+        </plugins>
+    </build>
+</project>

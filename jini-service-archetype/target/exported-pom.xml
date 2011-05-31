@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?><project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.jini.maven-jini-plugin</groupId>
+  <artifactId>jini-service-archetype</artifactId>
+  <packaging>maven-plugin</packaging>
+  <name>Jini Service Archetype</name>
+  <version>2.0</version>
+  <description>Archetype for Jini service project creation</description>
+  <url>http://maven-jini-plugin.jini.org/</url>
+  <issueManagement>
+    <system>Issue Tracker</system>
+    <url>http://maven-jini-plugin.jini.org/servlets/ProjectIssues</url>
+  </issueManagement>
+  <inceptionYear>2005</inceptionYear>
+  <mailingLists>
+    <mailingList>
+      <name>Maven Jini Plug-in Issues</name>
+      <subscribe>http://maven-jini-plugin.jini.org/servlets/ProjectMailingListList</subscribe>
+      <unsubscribe>http://maven-jini-plugin.jini.org/servlets/ProjectMailingListList</unsubscribe>
+      <post>issues@maven-jini-plugin.jini.org</post>
+      <archive>http://maven-jini-plugin.jini.org/servlets/SummarizeList?listName=issues</archive>
+    </mailingList>
+    <mailingList>
+      <name>Maven Jini Plug-in Discuss</name>
+      <subscribe>http://maven-jini-plugin.jini.org/servlets/ProjectMailingListList</subscribe>
+      <unsubscribe>http://maven-jini-plugin.jini.org/servlets/ProjectMailingListList</unsubscribe>
+      <post>discuss@maven-jini-plugin.jini.org</post>
+      <archive>http://maven-jini-plugin.jini.org/servlets/SummarizeList?listName=discuss</archive>
+    </mailingList>
+    <mailingList>
+      <name>Maven Jini Plug-in Announcements</name>
+      <subscribe>http://maven-jini-plugin.jini.org/servlets/ProjectMailingListList</subscribe>
+      <unsubscribe>http://maven-jini-plugin.jini.org/servlets/ProjectMailingListList</unsubscribe>
+      <post>announce@maven-jini-plugin.jini.org</post>
+      <archive>http://maven-jini-plugin.jini.org/servlets/SummarizeList?listName=announce</archive>
+    </mailingList>
+    <mailingList>
+      <name>Maven Jini Plug-in CVS</name>
+      <subscribe>http://maven-jini-plugin.jini.org/servlets/ProjectMailingListList</subscribe>
+      <unsubscribe>http://maven-jini-plugin.jini.org/servlets/ProjectMailingListList</unsubscribe>
+      <post>cvs@maven-jini-plugin.jini.org</post>
+      <archive>http://maven-jini-plugin.jini.org/servlets/SummarizeList?listName=cvs</archive>
+    </mailingList>
+  </mailingLists>
+  <developers>
+    <developer>
+      <id>csterwa</id>
+      <name>Chris Sterling</name>
+      <email>csterwa@jini.org</email>
+      <url>http://user-csterwa.jini.org/</url>
+      <timezone>8</timezone>
+    </developer>
+  </developers>
+  <licenses>
+    <license>
+      <name>Apache License version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <scm>
+    <connection>cvs::pserver:${user}@cvs.jini.org:/cvs/maven-jini-plugin/jini-service-archetype</connection>
+    <developerConnection>cvs::pserver:${user}@cvs.jini.org:/cvs/maven-jini-plugin/jini-service-archetype</developerConnection>
+    <url>http://maven-jini-plugin.jini.org/source/browse/maven-jini-plugin/jini-service-archetype/</url>
+  </scm>
+  <build>
+    <sourceDirectory>c:\projects\jini.org\maven-jini-plugin\jini-service-archetype\src\main\java</sourceDirectory>
+    <scriptSourceDirectory>src/main/scripts</scriptSourceDirectory>
+    <testSourceDirectory>c:\projects\jini.org\maven-jini-plugin\jini-service-archetype\src\test\java</testSourceDirectory>
+    <outputDirectory>c:\projects\jini.org\maven-jini-plugin\jini-service-archetype\target\classes</outputDirectory>
+    <testOutputDirectory>c:\projects\jini.org\maven-jini-plugin\jini-service-archetype\target\test-classes</testOutputDirectory>
+    <resources>
+      <resource>
+        <directory>c:\projects\jini.org\maven-jini-plugin\jini-service-archetype\src\main\resources</directory>
+      </resource>
+    </resources>
+    <testResources>
+      <testResource>
+        <directory>c:\projects\jini.org\maven-jini-plugin\jini-service-archetype\src\test\resources</directory>
+      </testResource>
+    </testResources>
+    <directory>c:\projects\jini.org\maven-jini-plugin\jini-service-archetype\target</directory>
+    <finalName>jini-service-archetype-2.0</finalName>
+    <plugins>
+      <plugin>
+        <artifactId>maven-plugin-plugin</artifactId>
+        <version>2.0</version>
+      </plugin>
+      <plugin>
+        <artifactId>maven-resources-plugin</artifactId>
+        <version>2.0</version>
+      </plugin>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>2.0</version>
+      </plugin>
+      <plugin>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.0-beta-1</version>
+      </plugin>
+      <plugin>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>2.0</version>
+      </plugin>
+      <plugin>
+        <artifactId>maven-install-plugin</artifactId>
+        <version>2.0</version>
+      </plugin>
+    </plugins>
+  </build>
+  <repositories>
+    <repository>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <id>central</id>
+      <name>Maven Repository Switchboard</name>
+      <url>http://repo1.maven.org/maven2</url>
+    </repository>
+  </repositories>
+  <pluginRepositories>
+    <pluginRepository>
+      <releases>
+        <updatePolicy>never</updatePolicy>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <id>central</id>
+      <name>Maven Plugin Repository</name>
+      <url>http://repo1.maven.org/maven2</url>
+    </pluginRepository>
+  </pluginRepositories>
+  <reporting>
+    <outputDirectory>target/site</outputDirectory>
+  </reporting>
+</project>

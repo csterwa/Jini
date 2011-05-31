@@ -1,0 +1,17 @@
+<project xmlns:j="jelly:core" xmlns:ant="jelly:ant" xmlns:u="jelly:util">
+  <goal name="start-service">
+  	<attainGoal name="java:jar"/>
+  	<attainGoal name="jini:deploy"/>
+    <attainGoal name="jini:starterkit-examples"/>
+    <ant:path id="service-classpath">
+		<ant:path refid="maven.dependency.classpath"/>
+		<ant:pathelement path="${maven.build.dest}"/>
+	</ant:path>
+	<ant:echo message="Starting @PACKAGE@.JiniServiceServer..."/>
+  	<ant:java classname="@PACKAGE@.JiniServiceServer" fork="true">
+  		<classpath refid="service-classpath" />
+		<ant:jvmarg line="-Djava.rmi.server.codebase=http://${maven.jini.service.codebasehost}:${maven.jini.service.codebaseport}/jsk-dl.jar"/>
+		<ant:jvmarg line="-Djava.security.policy=${maven.jini.service.policy}"/>
+  	</ant:java>
+  </goal>
+</project>

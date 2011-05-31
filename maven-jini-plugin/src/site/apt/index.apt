@@ -1,0 +1,11 @@
+Maven Jini Plug-in Project Description
+
+	This is a Maven plug-in for Jini service based projects. It's initial capabilities are:
+    
+    * Archetype for Jini service project creation
+    
+    * Starting/Stopping of Jini starter kit services: Reggie, Mahalo, Phoenix, Fiddler, Norm, Mercury, Outrigger, Browser, and HTTP daemon
+    
+    * Configurable RMI runtime: JRMP, JERI, or JERI/JSSE
+    
+    * Configurable activation and persistence modes: transient, activatable, nonactivatable

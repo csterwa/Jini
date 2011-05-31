@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<document>
+  <properties>
+    <title>Jini Plugin Goals</title>
+  </properties>
+  <body>
+    <goals>
+      <goal>
+        <name>jini:deploy</name>
+        <description>Deploys a jar file into the HTTP daemon code base folder</description>
+      </goal>
+      <goal>
+        <name>jini:genapp</name>
+        <description>Generates a Jini-aware project tree based on a template</description>
+      </goal>
+      <goal>
+        <name>jini:home</name>
+        <description>Sets the Jini home directory based on the download into your local Maven
+        cache</description>
+      </goal>
+      <goal>
+        <name>jini:httpd</name>
+        <description>Start the HTTP Daemon</description>
+      </goal>
+      <goal>
+        <name>jini:start</name>
+        <description>The low level Java runtime for starting services using the start.jar from
+        Jini starter kit</description>
+      </goal>
+      <goal>
+        <name>jini:start-browser-jeri</name>
+        <description>Start the Browser in JERI</description>
+      </goal>
+      <goal>
+        <name>jini:start-browser-jrmp</name>
+        <description>Start the Browser in JRMP</description>
+      </goal>
+      <goal>
+        <name>jini:start-browser-jsse</name>
+        <description>Start the Browser in JSSE</description>
+      </goal>
+      <goal>
+        <name>jini:start-fiddler-activatable-jeri</name>
+        <description>Start the fiddler service in JERI activatable</description>
+      </goal>
+      <goal>
+        <name>jini:start-fiddler-activatable-jrmp</name>
+        <description>Start the fiddler service in JRMP activatable</description>
+      </goal>
+      <goal>
+        <name>jini:start-fiddler-activatable-jsse</name>
+        <description>Start the fiddler service in JSSE activatable</description>
+      </goal>
+      <goal>
+        <name>jini:start-fiddler-nonactivatable-jeri</name>
+        <description>Start the fiddler service in JERI non-activatable</description>
+      </goal>
+      <goal>
+        <name>jini:start-fiddler-nonactivatable-jsse</name>
+        <description>Start the fiddler service in JSSE non-activatable</description>
+      </goal>
+      <goal>
+        <name>jini:start-fiddler-transient-jeri</name>
+        <description>Start the fiddler service in JERI transient</description>
+      </goal>
+      <goal>
+        <name>jini:start-fiddler-transient-jrmp</name>
+        <description>Start the fiddler service in JRMP transient</description>
+      </goal>
+      <goal>
+        <name>jini:start-fiddler-transient-jsse</name>
+        <description>Start the fiddler service in JSSE transient</description>
+      </goal>
+      <goal>
+        <name>jini:start-mahalo-activatable-jeri</name>
+        <description>Start the mahalo service in JERI activatable</description>
+      </goal>
+      <goal>
+        <name>jini:start-mahalo-activatable-jrmp</name>
+        <description>Start the mahalo service in JRMP activatable</description>
+      </goal>
+      <goal>
+        <name>jini:start-mahalo-activatable-jsse</name>
+        <description>Start the mahalo service in JSSE activatable</description>
+      </goal>
+      <goal>
+        <name>jini:start-mahalo-nonactivatable-jeri</name>
+        <description>Start the mahalo service in JERI non-activatable</description>
+      </goal>
+      <goal>
+        <name>jini:start-mahalo-nonactivatable-jsse</name>
+        <description>Start the mahalo service in JSSE non-activatable</description>
+      </goal>
+      <goal>
+        <name>jini:start-mahalo-transient-jeri</name>
+        <description>Start the mahalo service in JERI transient</description>
+      </goal>
+      <goal>
+        <name>jini:start-mahalo-transient-jrmp</name>
+        <description>Start the mahalo service in JRMP transient</description>
+      </goal>
+      <goal>
+        <name>jini:start-mahalo-transient-jsse</name>
+        <description>Start the mahalo service in JSSE transient</description>
+      </goal>
+      <goal>
+        <name>jini:start-mercury-activatable-jeri</name>
+        <description>Start the mercury service in JERI activatable</description>
+      </goal>
+      <goal>
+        <name>jini:start-mercury-activatable-jrmp</name>
+        <description>Start the mercury service in JRMP activatable</description>
+      </goal>
+      <goal>
+        <name>jini:start-mercury-activatable-jsse</name>
+        <description>Start the mercury service in JSSE activatable</description>
+      </goal>
+      <goal>
+        <name>jini:start-mercury-nonactivatable-jeri</name>
+        <description>Start the mercury service in JERI non-activatable</description>
+      </goal>
+      <goal>
+        <name>jini:start-mercury-nonactivatable-jsse</name>
+        <description>Start the mercury service in JSSE non-activatable</description>
+      </goal>
+      <goal>
+        <name>jini:start-mercury-transient-jeri</name>
+        <description>Start the mercury service in JERI transient</description>
+      </goal>
+      <goal>
+        <name>jini:start-mercury-transient-jrmp</name>
+        <description>Start the mercury service in JRMP transient</description>
+      </goal>
+      <goal>
+        <name>jini:start-mercury-transient-jsse</name>
+        <description>Start the mercury service in JSSE transient</description>
+      </goal>
+      <goal>
+        <name>jini:start-norm-activatable-jeri</name>
+        <description>Start the norm service in JERI activatable</description>
+      </goal>
+      <goal>
+        <name>jini:start-norm-activatable-jrmp</name>
+        <description>Start the norm service in JRMP activatable</description>
+      </goal>
+      <goal>
+        <name>jini:start-norm-activatable-jsse</name>
+        <description>Start the norm service in JSSE activatable</description>
+      </goal>
+      <goal>
+        <name>jini:start-norm-nonactivatable-jeri</name>
+        <description>Start the norm service in JERI non-activatable</description>
+      </goal>
+      <goal>
+        <name>jini:start-norm-nonactivatable-jsse</name>
+        <description>Start the norm service in JSSE non-activatable</description>
+      </goal>
+      <goal>
+        <name>jini:start-norm-transient-jeri</name>
+        <description>Start the norm service in JERI transient</description>
+      </goal>
+      <goal>
+        <name>jini:start-norm-transient-jrmp</name>
+        <description>Start the norm service in JRMP transient</description>
+      </goal>
+      <goal>
+        <name>jini:start-norm-transient-jsse</name>
+        <description>Start the norm service in JSSE transient</description>
+      </goal>
+      <goal>
+        <name>jini:start-outrigger-activatable-jeri</name>
+        <description>Start the outrigger service in JERI activatable</description>
+      </goal>
+      <goal>
+        <name>jini:start-outrigger-activatable-jrmp</name>
+        <description>Start the outrigger service in JRMP activatable</description>
+      </goal>
+      <goal>
+        <name>jini:start-outrigger-activatable-jsse</name>
+        <description>Start the outrigger service in JSSE activatable</description>
+      </goal>
+      <goal>
+        <name>jini:start-outrigger-nonactivatable-jeri</name>
+        <description>Start the outrigger service in JERI non-activatable</description>
+      </goal>
+      <goal>
+        <name>jini:start-outrigger-nonactivatable-jsse</name>
+        <description>Start the outrigger service in JSSE non-activatable</description>
+      </goal>
+      <goal>
+        <name>jini:start-outrigger-transient-jeri</name>
+        <description>Start the outrigger service in JERI transient</description>
+      </goal>
+      <goal>
+        <name>jini:start-outrigger-transient-jrmp</name>
+        <description>Start the outrigger service in JRMP transient</description>
+      </goal>
+      <goal>
+        <name>jini:start-outrigger-transient-jsse</name>
+        <description>Start the outrigger service in JSSE transient</description>
+      </goal>
+      <goal>
+        <name>jini:start-phoenix-jeri</name>
+        <description>Start Phoenix in JERI</description>
+      </goal>
+      <goal>
+        <name>jini:start-phoenix-jrmp</name>
+        <description>Start Phoenix in JRMP</description>
+      </goal>
+      <goal>
+        <name>jini:start-phoenix-jsse</name>
+        <description>Start Phoenix in JSSE</description>
+      </goal>
+      <goal>
+        <name>jini:start-reggie-activatable-jeri</name>
+        <description>Start the Reggie service in JERI activatable</description>
+      </goal>
+      <goal>
+        <name>jini:start-reggie-activatable-jrmp</name>
+        <description>Start the Reggie service in JRMP activatable</description>
+      </goal>
+      <goal>
+        <name>jini:start-reggie-activatable-jsse</name>
+        <description>Start the Reggie service in JSSE activatable</description>
+      </goal>
+      <goal>
+        <name>jini:start-reggie-nonactivatable-jeri</name>
+        <description>Start the Reggie service in JERI non-activatable</description>
+      </goal>
+      <goal>
+        <name>jini:start-reggie-nonactivatable-jsse</name>
+        <description>Start the Reggie service in JSSE non-activatable</description>
+      </goal>
+      <goal>
+        <name>jini:start-reggie-transient-jeri</name>
+        <description>Start the Reggie service in JERI transient</description>
+      </goal>
+      <goal>
+        <name>jini:start-reggie-transient-jrmp</name>
+        <description>Start the Reggie service in JRMP transient</description>
+      </goal>
+      <goal>
+        <name>jini:start-reggie-transient-jsse</name>
+        <description>Start the Reggie service in JSSE transient</description>
+      </goal>
+    </goals>
+  </body>
+</document>

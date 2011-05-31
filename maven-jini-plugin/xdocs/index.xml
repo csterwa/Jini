@@ -1,0 +1,19 @@
+<document>
+	<properties>
+	<title>Home</title>
+	<author email="jason@zenplex.com">Jason van Zyl</author>
+	<author email="aheritier@apache.org">Arnaud Heritier</author>
+	</properties>
+	<body>
+		<section name="Maven Ant Plug-in">
+			<p>
+		        This is a Maven plug-in for Jini service based projects. It's initial capabilities are to:
+			    <ul>
+			    <li>Service generation goal with template output</li>
+			    <li>Starting/Stopping of Jini starter kit services: Reggie, Mahalo, Phoenix, Fiddler, Norm, Mercury, Outrigger, Browser, and HTTP daemon</li>
+			    <li>Configurable RMI runtime using either JRMP, JERI, or JERI/JSSE</li>
+			    </ul>
+			</p>
+		</section>
+	</body>
+</document>
